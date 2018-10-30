@@ -26,8 +26,8 @@ p {
   display: grid;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 200px;
-  padding-right: 200px;
+  /*padding-left: 200px;
+  padding-right: 200px;*/
 }
 
 .banner {
@@ -67,6 +67,32 @@ p {
   margin: 75px 0 0;
 }
 
+.highlight-description {
+ display: grid;
+ grid-template-columns: 1fr;
+ width: 100%;
+ max-width: 800px;
+ margin: auto;
+ grid-gap: 20px;
+}
+
+.point {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: auto;
+}
+
+.point img {
+  display: block;
+  margin: auto;
+}
+
+.point p {
+  color: #ffffff;
+  text-align: center;
+  max-width: 300px;
+}
+
 @media (min-width: 600px) {
   .features {
     grid-template-columns: 1fr 2fr;
@@ -78,8 +104,15 @@ p {
     align-items: center;
     margin: 75px 0 0;
   }
+  .features:nth-of-type(even) .features-image {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .features:nth-of-type(even) .features-side {
+    grid-column: 1;
+    grid-row: 1;
+  }
   .highlight-description {
-   display: grid;
    grid-template-columns: 1fr 1fr 1fr;
   }
   .point {
@@ -102,15 +135,6 @@ body .hero {
 }
 
 .highlights h2 {
-  color: #ffffff;
-  text-align: center;
-}
-
-.point {
-  width: 50%;
-}
-
-.point p {
   color: #ffffff;
   text-align: center;
 }
