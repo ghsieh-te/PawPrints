@@ -24,10 +24,6 @@ p {
 
 .container {
   display: grid;
-  margin-right: auto;
-  margin-left: auto;
-  /*padding-left: 200px;
-  padding-right: 200px;*/
 }
 
 .banner {
@@ -38,16 +34,21 @@ p {
 }
 
 .container.banner {
-  height: 820px;
+  height: 100vh;
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
 .container.highlights {
   background-color: #053782;
   grid-template-rows: auto auto;
+  padding-bottom: 100px;
 }
 
 .container.features-wrapper {
   background-color: #BAC8DC;
+  padding-top: 200px;
+  padding-bottom: 100px;
 }
 
 .container.download {
@@ -64,7 +65,13 @@ p {
 .features {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 75px 0 0;
+  /*padding-right: 100px;
+  padding-left: 100px;*/
+  padding: 0 75px 100px 75px;
+  /*grid-gap: 50px;*/
+  column-gap: 200px;
+  text-align: center;
+  margin: auto;
 }
 
 .highlight-description {
@@ -73,13 +80,14 @@ p {
  width: 100%;
  max-width: 800px;
  margin: auto;
- grid-gap: 20px;
+ grid-gap: 75px;
+ column-gap: 100px;
 }
 
 .point {
-    display: grid;
-    grid-template-rows: auto auto;
-    margin: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  margin: auto;
 }
 
 .point img {
@@ -93,11 +101,22 @@ p {
   max-width: 300px;
 }
 
+body .hero {
+  display: grid;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  padding-bottom: 200px;
+}
+
 @media (min-width: 600px) {
   .features {
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    margin: 75px 0 0;
+    padding-right: 15vw;
+    padding-left: 15vw;
+    grid-gap: 50px;
+    text-align: left;
   }
   .features:nth-of-type(even) {
     grid-template-columns: 2fr 1fr;
@@ -113,21 +132,14 @@ p {
     grid-row: 1;
   }
   .highlight-description {
-   grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  .point {
-      display: grid;
-      grid-template-rows: auto auto;
-      margin: auto;
+  body .hero {
+    margin: auto 0 auto auto;
+    padding-right: 100px;
   }
 }
 
-body .hero {
-  display: grid;
-  text-align: center;
-  position: relative;
-  width: 500px;
-}
 
 .hero h1 {
   color: #ffffff;
@@ -137,6 +149,9 @@ body .hero {
 .highlights h2 {
   color: #ffffff;
   text-align: center;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .features-side h2 {
@@ -168,4 +183,5 @@ footer .contact {
 footer .copyright p {
   color: #ffffff;
   font-size: 10px;
+  padding-left: 30px;
 }
