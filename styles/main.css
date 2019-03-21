@@ -139,7 +139,11 @@ body .hero {
   padding-bottom: 200px;
 }
 
-@media (min-width: 600px) {
+@media (min-width:375px){
+
+}
+
+@media (min-width:768px) {
   .features {
     grid-template-columns: 1fr 2fr;
     align-items: center;
