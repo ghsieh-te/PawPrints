@@ -12,4 +12,4 @@ Name | File | Description
 **PawPrints Landing Page** | index.html | Landing page for the PawPrints iOS app
 
 ## Additional Content
-/* View the entire case study and prototype [**here**](https://grace-te.com/pawprintscs.html)
+* View the entire case study and prototype [**here**](https://grace-te.com/pawprintscs.html)
